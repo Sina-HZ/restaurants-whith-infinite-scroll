@@ -44,7 +44,6 @@ const MainPage = ({ mainFilters, vendors, ...props }) => {
     setLastScroll(window.pageYOffset);
     if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
     try {
-      console.log('infinite: ', page);
       const result = await fetchVendor(`?filters=${JSON.stringify({ ['sortings']: [currentSort] })}`, page + 1);
       dispatch(fetchRestaurant(result.data.data.finalResult));
       setPage(prevPage => prevPage + 1);
