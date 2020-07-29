@@ -10,14 +10,11 @@ import { Provider } from 'react-redux';
 import rootReducer from './redux/reducers'
 import mySaga from './redux/saga'
 
-// const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
   rootReducer,
-  // applyMiddleware(sagaMiddleware)
   );
 
-// sagaMiddleware.run(mySaga);
 
 
 ReactDOM.render(
