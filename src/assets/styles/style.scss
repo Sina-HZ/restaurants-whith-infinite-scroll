@@ -1,0 +1,228 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: IRANSans;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.App-main {
+    background-color: #f3f3f3;
+}
+
+.container {
+    .filter-button-main {
+        position: fixed;
+        bottom: 24px;
+        right: calc((100% - 140px) / 2);
+        left: calc((100% - 140px) / 2);
+        display: flex;
+        justify-content: center;
+
+        button {
+            background-color: #ec008c;
+            z-index: 400;
+            height: 48px;
+            border-radius: 6px;
+            color: #fff;
+            padding: 0px 15px;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 22px;
+                width: 22px;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.radio-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: start;
+}
+
+.restaurant-box {
+    background-color: #fff;
+    padding: 16px;
+    margin: 8px 0px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+    .inner-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 16px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+
+        .info-wrap {
+            text-align: right;
+            overflow: hidden;
+            padding: 0px 16px;
+            h4 {
+                margin-bottom: 8px;
+                font-size: 17px;
+                color: #404040;
+            }
+        }
+        .type {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #404040;
+        }
+        .address {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+            overflow: hidden;
+            direction: rtl;
+            font-size: 12px;
+            color: #404040;
+        }
+    }
+
+    .aditional-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .reviews {
+            .rates {
+                display: inline-block;
+                background-color: #3f7e00;
+                padding: 0px 10px;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 17px;
+            }
+
+            .count {
+                display: inline-flex;
+                flex-direction: row-reverse;
+                margin-left: 8px;
+                font-size: 12px;
+                color: #404040;
+            }
+        }
+
+        .badges {
+        }
+    }
+}
+
+.filter-box {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #fff;
+    transition: top 0.6s;
+
+    &.visible {
+        top: 100%;
+    }
+
+    &.hidden {
+        top: -100%;
+    }
+}
+
+.chips-main {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: scroll;
+    padding: 16px 16px 16px 0px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.filter-chips {
+    white-space: nowrap;
+    padding: 0px 8px;
+    line-height: 32px;
+    color: #a3a3a3;
+    font-size: 14px;
+
+    &.active {
+        color: white;
+        font-weight: 500;
+        background-color: #404040;
+        border-radius: 16px;
+    }
+}
